@@ -179,8 +179,9 @@ public class EXT_X_STREAM_INF: BaseAttributedTag, MultilineTag {
             TagParamsKeys.attributesSeperator: ",",
             TagParamsKeys.attributesExtrasToRemove: ["\""],
             TagParamsKeys.attributesKeys: [
-                EXT_X_STREAM_INF.bandwidthAttributeKey,
-                EXT_X_STREAM_INF.resolutionAttributeKey
+                EXT_X_STREAM_INF.bandwidthAttributeKey
+                // Убрал специально
+                // EXT_X_STREAM_INF.resolutionAttributeKey
             ]
         ]
         let multiline = text.components(separatedBy: .newlines)
